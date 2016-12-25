@@ -21,7 +21,8 @@
     "ci": "npm run e2e && npm run test",
     "docs": "typedoc --options typedoc.json src/app/app.component.ts",
     "start": "npm run server",
-    "start:hmr": "npm run server -- --hot"
+    "start:hmr": "npm run server -- --hot",
+    "postinstall": "npm run webdriver-update"
   },
   "dependencies": {
     "@angular/common": "2.4.1",
